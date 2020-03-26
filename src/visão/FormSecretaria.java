@@ -35,10 +35,11 @@ public class FormSecretaria extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        btnAdicionar = new javax.swing.JButton();
+        btnLocalizar = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -61,43 +62,67 @@ public class FormSecretaria extends javax.swing.JFrame {
 
         jLabel1.setText("SECRETARIA");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(40, 140, 80, 14);
+        jLabel1.setBounds(70, 170, 80, 14);
 
         jLabel2.setText("SIGLA");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(460, 140, 29, 14);
+        jLabel2.setBounds(490, 170, 29, 14);
 
         jLabel3.setText("SERETARIO(A)/ RESONSÁVEL");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 200, 170, 14);
+        jLabel3.setBounds(70, 230, 170, 14);
+
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(40, 160, 410, 30);
+        jTextField1.setBounds(70, 190, 410, 30);
+
+        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(460, 160, 160, 30);
+        jTextField2.setBounds(490, 190, 160, 30);
+
+        jTextField3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(40, 220, 580, 30);
+        jTextField3.setBounds(70, 250, 580, 30);
 
-        jButton1.setText("Adicionar");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(40, 273, 80, 60);
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Dados da Secretaria", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12))); // NOI18N
+        jPanel1.setLayout(null);
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(50, 150, 620, 150);
 
-        jButton2.setText("Localizar");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(130, 290, 73, 23);
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel2.setLayout(null);
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(30, 130, 660, 200);
 
-        jButton3.setText("Excluir");
+        btnAdicionar.setBackground(new java.awt.Color(255, 255, 255));
+        btnAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnAdiconar.png"))); // NOI18N
+        btnAdicionar.setToolTipText("Adicionar");
+        btnAdicionar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnAdicionar.setContentAreaFilled(false);
+        getContentPane().add(btnAdicionar);
+        btnAdicionar.setBounds(190, 350, 50, 50);
+
+        btnLocalizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnLocalizar.png"))); // NOI18N
+        btnLocalizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnLocalizar.setContentAreaFilled(false);
+        getContentPane().add(btnLocalizar);
+        btnLocalizar.setBounds(270, 350, 50, 50);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnExcluir.png"))); // NOI18N
+        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton3.setContentAreaFilled(false);
         getContentPane().add(jButton3);
-        jButton3.setBounds(220, 290, 63, 23);
+        jButton3.setBounds(360, 350, 50, 50);
 
-        jButton4.setText("Sair");
-        getContentPane().add(jButton4);
-        jButton4.setBounds(530, 290, 51, 23);
-
-        jButton5.setText("Alterar");
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnAlterar.png"))); // NOI18N
+        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton5.setContentAreaFilled(false);
         getContentPane().add(jButton5);
-        jButton5.setBounds(310, 290, 65, 23);
+        jButton5.setBounds(440, 350, 50, 50);
 
-        setSize(new java.awt.Dimension(657, 375));
+        setSize(new java.awt.Dimension(729, 450));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -144,14 +169,15 @@ public class FormSecretaria extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnAdicionar;
+    private javax.swing.JButton btnLocalizar;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

@@ -56,6 +56,10 @@ public class FormEmpresa extends javax.swing.JFrame {
         jFormattedTextField2 = new javax.swing.JFormattedTextField();
         icoEmpresa = new javax.swing.JLabel();
         lblEmpresa = new javax.swing.JLabel();
+        btnAdicionar = new javax.swing.JButton();
+        btnLocalizar = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -286,6 +290,32 @@ public class FormEmpresa extends javax.swing.JFrame {
         getContentPane().add(lblEmpresa);
         lblEmpresa.setBounds(160, 40, 160, 40);
 
+        btnAdicionar.setBackground(new java.awt.Color(255, 255, 255));
+        btnAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnAdiconar.png"))); // NOI18N
+        btnAdicionar.setToolTipText("Adicionar");
+        btnAdicionar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnAdicionar.setContentAreaFilled(false);
+        getContentPane().add(btnAdicionar);
+        btnAdicionar.setBounds(300, 420, 50, 50);
+
+        btnLocalizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnLocalizar.png"))); // NOI18N
+        btnLocalizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnLocalizar.setContentAreaFilled(false);
+        getContentPane().add(btnLocalizar);
+        btnLocalizar.setBounds(380, 420, 50, 50);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnExcluir.png"))); // NOI18N
+        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton3.setContentAreaFilled(false);
+        getContentPane().add(jButton3);
+        jButton3.setBounds(470, 420, 50, 50);
+
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnAlterar.png"))); // NOI18N
+        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton5.setContentAreaFilled(false);
+        getContentPane().add(jButton5);
+        jButton5.setBounds(550, 420, 50, 50);
+
         setSize(new java.awt.Dimension(928, 528));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -341,7 +371,11 @@ public class FormEmpresa extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAdicionar;
+    private javax.swing.JButton btnLocalizar;
     private javax.swing.JLabel icoEmpresa;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JFormattedTextField jFormattedTextField1;
