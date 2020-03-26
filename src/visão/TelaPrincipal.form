@@ -157,7 +157,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Imagens/IcoNF.png"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Notas Fiscais"/>
+            <Property name="toolTipText" type="java.lang.String" value="Lan&#xe7;ar Notas Fiscais"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -170,7 +170,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Imagens/IcoEmp.png"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Empresas"/>
+            <Property name="toolTipText" type="java.lang.String" value="Cadastrar Empresas"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCadEmpresasActionPerformed"/>
@@ -186,7 +186,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Imagens/SECRETARIAS.png"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Secretarias"/>
+            <Property name="toolTipText" type="java.lang.String" value="Cadastrar Secretarias"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCadSecretariasActionPerformed"/>
@@ -202,6 +202,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Imagens/DESPACHOS.png"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Despacho de Notas / Empenhos"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

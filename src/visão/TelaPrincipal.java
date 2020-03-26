@@ -67,12 +67,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabelPainelCadastro.setBounds(20, 20, 110, 30);
 
         jButtonCadNFe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/IcoNF.png"))); // NOI18N
-        jButtonCadNFe.setToolTipText("Notas Fiscais");
+        jButtonCadNFe.setToolTipText("Lançar Notas Fiscais");
         jPanelInernal.add(jButtonCadNFe);
         jButtonCadNFe.setBounds(260, 60, 110, 110);
 
         jButtonCadEmpresas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/IcoEmp.png"))); // NOI18N
-        jButtonCadEmpresas.setToolTipText("Empresas");
+        jButtonCadEmpresas.setToolTipText("Cadastrar Empresas");
         jButtonCadEmpresas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCadEmpresasActionPerformed(evt);
@@ -82,7 +82,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButtonCadEmpresas.setBounds(20, 60, 110, 110);
 
         jButtonCadSecretarias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/SECRETARIAS.png"))); // NOI18N
-        jButtonCadSecretarias.setToolTipText("Secretarias");
+        jButtonCadSecretarias.setToolTipText("Cadastrar Secretarias");
         jButtonCadSecretarias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCadSecretariasActionPerformed(evt);
@@ -92,6 +92,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButtonCadSecretarias.setBounds(140, 60, 110, 110);
 
         jButtonRelDespacho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/DESPACHOS.png"))); // NOI18N
+        jButtonRelDespacho.setToolTipText("Despacho de Notas / Empenhos");
         jPanelInernal.add(jButtonRelDespacho);
         jButtonRelDespacho.setBounds(20, 210, 110, 100);
 
