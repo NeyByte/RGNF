@@ -92,6 +92,11 @@ public class Telalogin extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton1KeyPressed(evt);
+            }
+        });
         getContentPane().add(jButton1);
         jButton1.setBounds(290, 170, 80, 30);
 
@@ -116,6 +121,12 @@ public class Telalogin extends javax.swing.JFrame {
         jLabelSenha.setText("Senha:");
         getContentPane().add(jLabelSenha);
         jLabelSenha.setBounds(240, 120, 50, 15);
+
+        txtSenha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtSenhaKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtSenha);
         txtSenha.setBounds(290, 110, 170, 30);
 
@@ -149,6 +160,16 @@ public class Telalogin extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
     System.exit(0);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txtSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSenhaKeyPressed
+        // TODO add your handling code here:
+        logar();
+    }//GEN-LAST:event_txtSenhaKeyPressed
+
+    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
+        // TODO add your handling code here:
+        logar();
+    }//GEN-LAST:event_jButton1KeyPressed
 
     /**
      * @param args the command line arguments

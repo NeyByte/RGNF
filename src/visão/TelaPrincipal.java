@@ -42,9 +42,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabelFundoPrincipal = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuCadastro = new javax.swing.JMenu();
-        jMenuItemCadEmpresas = new javax.swing.JMenuItem();
-        jMenuItemCadSecretarias = new javax.swing.JMenuItem();
-        jMenuItemCadNotasFiscais = new javax.swing.JMenuItem();
+        menuCadEmpresas = new javax.swing.JMenuItem();
+        menuCadSecretarias = new javax.swing.JMenuItem();
+        menuCadNF = new javax.swing.JMenuItem();
         jMenuRelatorio = new javax.swing.JMenu();
         jMenuDespachos = new javax.swing.JMenu();
         jMenuItemFinanceiro = new javax.swing.JMenuItem();
@@ -117,19 +117,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuCadastro.setText("Cadastro");
 
-        jMenuItemCadEmpresas.setText("Empresas");
-        jMenuItemCadEmpresas.addActionListener(new java.awt.event.ActionListener() {
+        menuCadEmpresas.setText("Empresas");
+        menuCadEmpresas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemCadEmpresasActionPerformed(evt);
+                menuCadEmpresasActionPerformed(evt);
             }
         });
-        jMenuCadastro.add(jMenuItemCadEmpresas);
+        jMenuCadastro.add(menuCadEmpresas);
 
-        jMenuItemCadSecretarias.setText("Secretarias");
-        jMenuCadastro.add(jMenuItemCadSecretarias);
+        menuCadSecretarias.setText("Secretarias");
+        jMenuCadastro.add(menuCadSecretarias);
 
-        jMenuItemCadNotasFiscais.setText("Notas Fiscal");
-        jMenuCadastro.add(jMenuItemCadNotasFiscais);
+        menuCadNF.setText("Notas Fiscal");
+        jMenuCadastro.add(menuCadNF);
 
         jMenuBar1.add(jMenuCadastro);
 
@@ -179,9 +179,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItemCadEmpresasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadEmpresasActionPerformed
+    private void menuCadEmpresasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadEmpresasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItemCadEmpresasActionPerformed
+        FormEmpresa empresa = new FormEmpresa();
+        empresa.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_menuCadEmpresasActionPerformed
 
     private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
     System.exit(0);
@@ -249,9 +252,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenuCadastro;
     private javax.swing.JMenu jMenuDespachos;
     private javax.swing.JMenu jMenuFerramentas;
-    private javax.swing.JMenuItem jMenuItemCadEmpresas;
-    private javax.swing.JMenuItem jMenuItemCadNotasFiscais;
-    private javax.swing.JMenuItem jMenuItemCadSecretarias;
     private javax.swing.JMenuItem jMenuItemFinanceiro;
     private javax.swing.JMenuItem jMenuItemFundos;
     private javax.swing.JMenuItem jMenuItemSair;
@@ -259,5 +259,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenuRelatorio;
     private javax.swing.JMenu jMenuSair;
     private javax.swing.JPanel jPanelInernal;
+    private javax.swing.JMenuItem menuCadEmpresas;
+    private javax.swing.JMenuItem menuCadNF;
+    private javax.swing.JMenuItem menuCadSecretarias;
     // End of variables declaration//GEN-END:variables
 }

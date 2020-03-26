@@ -42,6 +42,11 @@ public class FormSecretaria extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                formWindowClosed(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         lbllogoSecretaria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/SECRETARIAS.png"))); // NOI18N
@@ -95,6 +100,13 @@ public class FormSecretaria extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(657, 375));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+        // TODO add your handling code here:
+        TelaPrincipal principal = new TelaPrincipal();
+        principal.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_formWindowClosed
 
     /**
      * @param args the command line arguments

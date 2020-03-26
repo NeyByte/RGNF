@@ -9,20 +9,20 @@
             <Property name="text" type="java.lang.String" value="Cadastro"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCadEmpresas">
+            <MenuItem class="javax.swing.JMenuItem" name="menuCadEmpresas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Empresas"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemCadEmpresasActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuCadEmpresasActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCadSecretarias">
+            <MenuItem class="javax.swing.JMenuItem" name="menuCadSecretarias">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Secretarias"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCadNotasFiscais">
+            <MenuItem class="javax.swing.JMenuItem" name="menuCadNF">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Notas Fiscal"/>
               </Properties>
