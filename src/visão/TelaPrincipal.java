@@ -83,6 +83,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jButtonCadSecretarias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/SECRETARIAS.png"))); // NOI18N
         jButtonCadSecretarias.setToolTipText("Secretarias");
+        jButtonCadSecretarias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCadSecretariasActionPerformed(evt);
+            }
+        });
         jPanelInernal.add(jButtonCadSecretarias);
         jButtonCadSecretarias.setBounds(140, 60, 110, 110);
 
@@ -126,6 +131,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuCadastro.add(menuCadEmpresas);
 
         menuCadSecretarias.setText("Secretarias");
+        menuCadSecretarias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuCadSecretariasActionPerformed(evt);
+            }
+        });
         jMenuCadastro.add(menuCadSecretarias);
 
         menuCadNF.setText("Notas Fiscal");
@@ -201,6 +211,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
         fEmpresa.setVisible(true);
         dispose();    // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCadEmpresasActionPerformed
+
+    private void menuCadSecretariasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadSecretariasActionPerformed
+        // TODO add your handling code here:
+        FormSecretaria secretaria = new FormSecretaria();
+        secretaria.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_menuCadSecretariasActionPerformed
+
+    private void jButtonCadSecretariasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadSecretariasActionPerformed
+        // TODO add your handling code here:
+        FormSecretaria secretaria = new FormSecretaria();
+        secretaria.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_jButtonCadSecretariasActionPerformed
 
     /**
      * @param args the command line arguments
