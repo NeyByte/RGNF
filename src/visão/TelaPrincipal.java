@@ -78,6 +78,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jButtonCadEmpresasActionPerformed(evt);
             }
         });
+        jButtonCadEmpresas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonCadEmpresasKeyPressed(evt);
+            }
+        });
         jPanelInernal.add(jButtonCadEmpresas);
         jButtonCadEmpresas.setBounds(20, 60, 110, 110);
 
@@ -86,6 +91,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButtonCadSecretarias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCadSecretariasActionPerformed(evt);
+            }
+        });
+        jButtonCadSecretarias.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonCadSecretariasKeyPressed(evt);
             }
         });
         jPanelInernal.add(jButtonCadSecretarias);
@@ -189,12 +199,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(977, 600));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void menuCadEmpresasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadEmpresasActionPerformed
-        // TODO add your handling code here:
+    private void chamaEmpresa(){
         FormEmpresa empresa = new FormEmpresa();
         empresa.setVisible(true);
         this.dispose();
+        
+    }
+    private void chamaSecretaria(){
+        FormSecretaria secretaria = new FormSecretaria();
+        secretaria.setVisible(true);
+        this.dispose();
+    }
+    private void menuCadEmpresasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadEmpresasActionPerformed
+        // TODO add your handling code here:
+        chamaEmpresa();
     }//GEN-LAST:event_menuCadEmpresasActionPerformed
 
     private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
@@ -208,25 +226,31 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItemTelaBenvindoActionPerformed
 
     private void jButtonCadEmpresasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadEmpresasActionPerformed
-        FormEmpresa fEmpresa = new FormEmpresa();
-        fEmpresa.setVisible(true);
-        dispose();    // TODO add your handling code here:
+          // TODO add your handling code here:
+          chamaEmpresa();
     }//GEN-LAST:event_jButtonCadEmpresasActionPerformed
 
     private void menuCadSecretariasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadSecretariasActionPerformed
         // TODO add your handling code here:
-        FormSecretaria secretaria = new FormSecretaria();
-        secretaria.setVisible(true);
-        this.dispose();
+          chamaSecretaria();
+        
     }//GEN-LAST:event_menuCadSecretariasActionPerformed
 
     private void jButtonCadSecretariasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadSecretariasActionPerformed
         // TODO add your handling code here:
-        FormSecretaria secretaria = new FormSecretaria();
-        secretaria.setVisible(true);
-        this.dispose();
+          chamaSecretaria();
         
     }//GEN-LAST:event_jButtonCadSecretariasActionPerformed
+
+    private void jButtonCadEmpresasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonCadEmpresasKeyPressed
+        // TODO add your handling code here:
+        chamaEmpresa();
+    }//GEN-LAST:event_jButtonCadEmpresasKeyPressed
+
+    private void jButtonCadSecretariasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonCadSecretariasKeyPressed
+        // TODO add your handling code here:
+        chamaSecretaria();
+    }//GEN-LAST:event_jButtonCadSecretariasKeyPressed
 
     /**
      * @param args the command line arguments
