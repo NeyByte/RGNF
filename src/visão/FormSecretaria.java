@@ -66,9 +66,9 @@ public class FormSecretaria extends javax.swing.JFrame {
 
         jLabel2.setText("SIGLA");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(490, 170, 29, 14);
+        jLabel2.setBounds(490, 170, 50, 14);
 
-        jLabel3.setText("SERETARIO(A)/ RESONSÁVEL");
+        jLabel3.setText("SECRETARIO(A)/ RESONSÁVEL");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(70, 230, 170, 14);
 
