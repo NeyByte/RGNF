@@ -105,18 +105,21 @@ public class FormSecretaria extends javax.swing.JFrame {
         btnAdicionar.setBounds(190, 350, 50, 50);
 
         btnLocalizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnLocalizar.png"))); // NOI18N
+        btnLocalizar.setToolTipText("Pesquisar");
         btnLocalizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnLocalizar.setContentAreaFilled(false);
         getContentPane().add(btnLocalizar);
         btnLocalizar.setBounds(270, 350, 50, 50);
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnExcluir.png"))); // NOI18N
+        jButton3.setToolTipText("Excluir");
         jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton3.setContentAreaFilled(false);
         getContentPane().add(jButton3);
         jButton3.setBounds(360, 350, 50, 50);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/btnAlterar.png"))); // NOI18N
+        jButton5.setToolTipText("Atutalizar");
         jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton5.setContentAreaFilled(false);
         getContentPane().add(jButton5);
