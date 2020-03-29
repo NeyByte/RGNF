@@ -205,7 +205,7 @@ public class FormEmpresa extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(23, 69, 733, 140);
+        jPanel2.setBounds(23, 69, 806, 140);
 
         lblNomeEmpresa.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblNomeEmpresa.setText("Nome/Razão Social:");
@@ -215,7 +215,7 @@ public class FormEmpresa extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("CNPJ:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(610, 10, 31, 15);
+        jLabel1.setBounds(610, 10, 32, 15);
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -295,6 +295,7 @@ public class FormEmpresa extends javax.swing.JFrame {
         btnAdicionar.setToolTipText("Adicionar");
         btnAdicionar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnAdicionar.setContentAreaFilled(false);
+        btnAdicionar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(btnAdicionar);
         btnAdicionar.setBounds(300, 420, 50, 50);
 
@@ -302,6 +303,7 @@ public class FormEmpresa extends javax.swing.JFrame {
         btnLocalizar.setToolTipText("Pesquisar");
         btnLocalizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnLocalizar.setContentAreaFilled(false);
+        btnLocalizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(btnLocalizar);
         btnLocalizar.setBounds(380, 420, 50, 50);
 
@@ -309,6 +311,7 @@ public class FormEmpresa extends javax.swing.JFrame {
         jButton3.setToolTipText("Excluir");
         jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton3.setContentAreaFilled(false);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(jButton3);
         jButton3.setBounds(470, 420, 50, 50);
 
@@ -316,6 +319,7 @@ public class FormEmpresa extends javax.swing.JFrame {
         jButton5.setToolTipText("Atualizr");
         jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton5.setContentAreaFilled(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(jButton5);
         jButton5.setBounds(550, 420, 50, 50);
 

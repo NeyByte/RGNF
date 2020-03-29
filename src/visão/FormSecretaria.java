@@ -62,15 +62,15 @@ public class FormSecretaria extends javax.swing.JFrame {
 
         jLabel1.setText("SECRETARIA");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(70, 170, 80, 14);
+        jLabel1.setBounds(70, 170, 80, 17);
 
         jLabel2.setText("SIGLA");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(490, 170, 50, 14);
+        jLabel2.setBounds(490, 170, 50, 17);
 
         jLabel3.setText("SECRETARIO(A)/ RESONSÁVEL");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(70, 230, 170, 14);
+        jLabel3.setBounds(70, 230, 170, 17);
 
         jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jTextField1);
@@ -101,6 +101,7 @@ public class FormSecretaria extends javax.swing.JFrame {
         btnAdicionar.setToolTipText("Adicionar");
         btnAdicionar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnAdicionar.setContentAreaFilled(false);
+        btnAdicionar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(btnAdicionar);
         btnAdicionar.setBounds(190, 350, 50, 50);
 
@@ -108,6 +109,7 @@ public class FormSecretaria extends javax.swing.JFrame {
         btnLocalizar.setToolTipText("Pesquisar");
         btnLocalizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnLocalizar.setContentAreaFilled(false);
+        btnLocalizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(btnLocalizar);
         btnLocalizar.setBounds(270, 350, 50, 50);
 
@@ -115,6 +117,7 @@ public class FormSecretaria extends javax.swing.JFrame {
         jButton3.setToolTipText("Excluir");
         jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton3.setContentAreaFilled(false);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(jButton3);
         jButton3.setBounds(360, 350, 50, 50);
 
@@ -122,6 +125,7 @@ public class FormSecretaria extends javax.swing.JFrame {
         jButton5.setToolTipText("Atutalizar");
         jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton5.setContentAreaFilled(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(jButton5);
         jButton5.setBounds(440, 350, 50, 50);
 
