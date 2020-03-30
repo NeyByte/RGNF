@@ -98,7 +98,7 @@ public class Telalogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(290, 170, 80, 30);
+        jButton1.setBounds(280, 170, 90, 30);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Sair");
@@ -113,7 +113,7 @@ public class Telalogin extends javax.swing.JFrame {
         jLabelUsuario.setFont(jLabelUsuario.getFont().deriveFont(jLabelUsuario.getFont().getStyle() | java.awt.Font.BOLD, jLabelUsuario.getFont().getSize()+1));
         jLabelUsuario.setText("Usuáro:");
         getContentPane().add(jLabelUsuario);
-        jLabelUsuario.setBounds(240, 50, 60, 30);
+        jLabelUsuario.setBounds(230, 50, 60, 30);
         getContentPane().add(txtUsuario);
         txtUsuario.setBounds(290, 50, 170, 30);
 
@@ -142,7 +142,7 @@ public class Telalogin extends javax.swing.JFrame {
         getContentPane().add(lblFundoLogin);
         lblFundoLogin.setBounds(0, 0, 480, 240);
 
-        setSize(new java.awt.Dimension(499, 280));
+        setSize(new java.awt.Dimension(494, 280));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

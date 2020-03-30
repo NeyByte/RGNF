@@ -109,7 +109,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("RELATÓRIO");
         jPanelInernal.add(jLabel1);
-        jLabel1.setBounds(20, 180, 110, 22);
+        jLabel1.setBounds(20, 180, 130, 22);
 
         jLabelPanelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/telaengrenage.png"))); // NOI18N
         jPanelInernal.add(jLabelPanelFundo);
@@ -125,7 +125,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabelApresentação.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabelApresentação.setText("Sistema de Gerenciamento ");
         getContentPane().add(jLabelApresentação);
-        jLabelApresentação.setBounds(320, 60, 500, 70);
+        jLabelApresentação.setBounds(320, 60, 590, 70);
 
         jLabelFundoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundoPrincipal.jpg"))); // NOI18N
         getContentPane().add(jLabelFundoPrincipal);
@@ -216,7 +216,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_menuCadEmpresasActionPerformed
 
     private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
-    System.exit(0);
+        System.exit(0);
     }//GEN-LAST:event_jMenuItemSairActionPerformed
 
     private void jMenuItemTelaBenvindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemTelaBenvindoActionPerformed
