@@ -24,7 +24,7 @@ ResultSet rs = null;
     
     //método para adicionar secretarias
     private void adicionar(){
-        String sql = "insert into tbSecretarias(nomesecretaria,sigla,secretario)values(?,?,?)";
+        String sql = "insert into tbsecretarias(nomesecretaria,sigla,secretario)values(?,?,?)";
         
         try {
             pst = conexao.prepareStatement(sql);
@@ -33,7 +33,7 @@ ResultSet rs = null;
             pst.setString(3,txtsecretario.getText());
             
             
-            if ((txtsecretaria.getText().isEmpty())|| (txtsigla.getText().isEmpty())||(txtsecretario.               getText().isEmpty())){
+            if ((txtsecretaria.getText().isEmpty())|| (txtsigla.getText().isEmpty())||(txtsecretario.     getText().isEmpty())){
                 JOptionPane.showMessageDialog(null, "Preencha todos os campos");
             }else {
                 int adicionado = pst.executeUpdate();
